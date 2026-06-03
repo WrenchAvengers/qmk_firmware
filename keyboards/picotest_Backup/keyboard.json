@@ -1,6 +1,5 @@
 {
     "keyboard_name": "picotest",
-    "manufacturer": "WrenchAvengers",
     "url": "",
     "maintainer": "WrenchAvengers",
     "bootloader": "rp2040",
@@ -25,26 +24,21 @@
     },
     "split": {
         "enabled": true,
-        "soft_serial_pin": "GP12",
-        "main": "left",
-        "matrix_pins": {
-            "right": {
-                "direct": [
-                    ["GP7"]
-                ]
-            }
+        "soft_serial_pin": "GP13",
+        "handedness": {
+            "pin": "GP22"
         }
     },
+    "diode_direction": "COL2ROW",
     "matrix_pins": {
-        "direct": [
-            ["GP6"]
-        ]
+        "cols": ["GP6"],
+        "rows": ["GP7"]
     },
     "layouts": {
         "LAYOUT_split_test": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0},
-                {"matrix": [1, 0], "x": 2, "y": 0}
+                {"matrix": [0, 1], "x": 2, "y": 0}
             ]
         }
     }
