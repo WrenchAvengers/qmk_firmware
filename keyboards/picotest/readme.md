@@ -25,3 +25,9 @@ Enter the bootloader in 3 ways:
 * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
 * **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
 * **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+
+Matts note right off.
+for choosing the Master side Left or Right im using the Pin method since there is free GPIO.
+but the way this works is it checks for a certain pin and if that pin is grounded then that board is master. as well as the master side has to have USB to PC.
+using gp22 for now. if its grounded then that side has to be master. it also seems that azoteq should be on the master side so for mine im putting it on the right side so Right will be master
+to make that i needed to add #define MASTER_RIGHT to the config.h if using left as master then that line should be removed.
