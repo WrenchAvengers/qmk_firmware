@@ -29,22 +29,18 @@
         "main": "left",
         "matrix_pins": {
             "right": {
-                "direct": [
-                    ["GP7"]
-                ]
+                "direct": [["GP7"]]
             }
         }
     },
     "matrix_pins": {
-        "direct": [
-            ["GP6"]
-        ]
+        "direct": [["GP6"]]
     },
     "layouts": {
         "LAYOUT_split_test": {
             "layout": [
-                {"matrix": [0, 0], "x": 0, "y": 0},
-                {"matrix": [1, 0], "x": 2, "y": 0}
+                { "matrix": [0, 0], "x": 0, "y": 0 },
+                { "matrix": [1, 0], "x": 2, "y": 0 }
             ]
         }
     }
